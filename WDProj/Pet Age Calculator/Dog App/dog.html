@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Dog App/dog_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="dog.js"></script>
+    <title>Dog Age Calculator</title>
+</head>
+<body>
+    <div class="name_area">
+        <div class="content">
+            <label for="name">Pet's name:</label><br>
+            <input type="text" id="name" name="name" placeholder="e.g. Puffy" required>
+        </div>
+    </div>
+    <div class="age_area">
+        <div class="content">
+            <label for="age">Age (in years):</label><br>
+            <input type="number" id="age" name="age" min="1" required>
+        </div>
+    </div>
+    <input onclick="calculate()" class="calculate" type="submit" value="Calculate">
+</body>
+</html>

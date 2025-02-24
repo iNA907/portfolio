@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ioana's Portfolio</title>
+    <link rel="stylesheet" href="style_light.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <h1>Hi, I'm Ioana.</h1>
+        <h2>Web <span class="highlight">designer</span> and developer</h2>
+        <a href="other site/index_dark.html"><div class="button"><div class="inner"></div></div></a>
+    </div>
+    <div class="about-projects">
+        <h2>UI Design</h2>
+        <p>Created using <span>Figma</span> and <span>Adobe Illustrator</span>.</p>
+    </div>
+    <div id="portfolio">
+        <div class="section">
+            <img onclick="scrollL()" class="left arrow" src="./assets/next.png">
+            <div class="gallery">
+                <img src="./assets/FinalAppPlant.png" height="500px">
+            </div>
+            <img onclick="scrollR()" class="right arrow" src="./assets/next.png"> 
+            <div class="description">
+                <p><b>Plant app</b> with watering reminders for forgetful plant owners</p>
+            </div>
+        </div>
+        <div class="section">
+            <img onclick="scrollL_2()" class="left arrow" src="./assets/next.png">
+            <div class="gallery gallery2">
+                <img src="assets/Dog Shelter.png" height="500px">
+            </div>
+            <img onclick="scrollR_2()" class="right arrow" src="./assets/next.png">
+            <div class="description">
+                <p>Responsive <b>Dog Shelter page</b> for showcase and contact</p>
+            </div>
+        </div>
+        <div class="section">
+            <img onclick="scrollL_3()" class="left arrow" src="./assets/next.png">
+            <div class="gallery gallery3">
+                <img src="assets/Books and Nooks.png" height="500px">
+            </div>
+            <img onclick="scrollR_3()" class="right arrow" src="./assets/next.png">
+            <div class="description">
+                <p><b>Library web page</b> destined for those who seek more information...or books.</p>
+            </div>
+        </div>
+    </div>
+    <script src="index_light.js" charset="UTF-8"></script>
+</body>
+</html>
+<!--DIV CLASS ="GALLERY" + FUNCTION NAMES-->

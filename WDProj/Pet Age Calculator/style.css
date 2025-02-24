@@ -1,0 +1,62 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #29251f;
+}
+.cat_half{
+    background-color: #FFB22C;
+    width: 50%;
+    height: 92%;
+    float: left;
+    background-image: url("Assets/cat\ pattern.png");
+}
+.cat_half:hover, .dog_half:hover{
+    opacity: 80%;
+}
+.dog_half{
+    background-color: #854836;
+    width: 50%;
+    height: 92%;
+    float: right;
+    background-image: url("Assets/dog\ pattern.png");
+}
+img{
+    width: 40%;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 30vh;
+}
+.dog_pic{
+    padding-top: 33vh;
+}
+@media only screen and (max-width: 600px){
+    .cat_half{
+        width: 100%;
+        height: 45%;
+    }
+    .dog_half{
+        width: 100%;
+        height: 45%;
+    }
+    .cat_pic{
+        position: absolute;
+        padding-top: 90px;
+    }
+    .dog_pic{
+        position: absolute;
+        padding-top: 100px;
+    }
+    h1{
+        padding-top: 10px;
+    }
+}
+h1{
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(228, 212, 186);
+    text-align: center;
+}

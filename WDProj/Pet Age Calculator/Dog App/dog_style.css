@@ -1,0 +1,80 @@
+body{
+    background-color: #854836;
+    background-image: url("../Assets/dog\ pattern.png");
+}
+.name_area, .age_area{
+    background-color: #b59186;
+    height: 200px;
+    width: 40%;
+    margin-top: 60px;
+    margin-left: 30%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #4f2b20;
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.calculate{
+    background-color: #9d6c5e;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 50px;
+    font-size: 20px;
+    border: 2px solid #4f2b20;
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.calculate:hover{
+    background-color: #6a392b;
+    cursor: pointer;
+}
+.content{
+    box-sizing: border-box;
+    padding: 50px;
+}
+input[name="name"]{
+    width: 100%;
+}
+input[name="age"]{
+    width: 20%;
+}
+input{
+    height: 30px;
+    background-color: #9d6c5e;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 2px solid #4f2b20;
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+::placeholder{
+    color: rgb(196, 196, 196);
+}
+label{
+    font-size: 20px;
+}
+@media only screen and (max-width: 800px){
+    .name_area{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .age_area{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .calculate{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .content{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #051432;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.hero{
+    background: radial-gradient(circle, rgba(73,108,168,1) 0%, rgba(49,53,119,1) 35%, rgba(5,20,50,1) 100%);
+    height: 600px;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px
+}
+@media screen and (max-width: 600px){
+    .hero{
+        height: 100vh;
+    }
+}
+.link{
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+.hero h1{
+    font-size: 5em;
+    margin-top: 90px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.hero h2{
+    font-size: 1.8em;
+    font-family: "Playfair Display", serif;
+    color: white;
+    margin-bottom: 90px;
+}
+.button{
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 2px solid white;
+    position: relative;
+    width: 15%;
+    left: 42.5%;
+    height: 60px;
+}
+@media screen and (max-width: 600px){
+    .button{ 
+        width: 30%;
+        left: 35%; 
+    }
+}
+.button:hover, .button:active{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+}
+.inner{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    animation: slideToRight 0.3s;
+}
+@keyframes slideToRight{
+    0% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}  
+@media screen and (max-width: 600px){
+    @keyframes slideToRight{
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }  
+}
+@media screen and (max-width: 1300px){
+    @keyframes slideToRight{
+        0% {
+          transform: translateX(-60%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }  
+} 
+.highlight{
+    color: rgb(0, 241, 217);
+}
+/*below hero-----------------------------------------------------------------*/
+
+.about-projects{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    margin-top: 50px;
+}
+.about-projects h2{
+    color: rgb(225, 227, 233);
+    font-size: 30px;
+}
+.about-projects p{
+    color: rgb(176, 184, 215);
+    font-size: 20px;
+}
+.about-projects span{
+    font-weight: bold;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.project{
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: 10%;
+    height: 203px;
+    border: 2px solid white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+img{
+    border-radius: 6px 0 0 6px;
+    width: 30%;
+    object-fit: cover;
+    float: left;
+}
+@media only screen and (max-width:1000px){
+    img{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:600px){
+    .project{
+        height: 350px;
+    }
+    img{
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+    }
+}
+img:hover{
+    opacity: 80%;
+}
+.site_desc{
+    position: relative;
+    height: inherit;
+    font-family: "Playfair Display", serif;
+    margin: 2%;
+    margin-left: 33%;
+}
+@media only screen and (max-width: 1000px){
+    img{
+        float: left;
+    }
+    .site_desc{
+        height: 180px;
+        position: relative;
+        top: -5px;
+        margin-left: 53%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    img{
+        float: right;
+    }
+    .site_desc{
+        height: 40%;
+        width: 90%;
+        position: relative;
+        top: 4px;
+        left: -48%
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+.site_title{
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.095);
+}
+.site_p{
+    font-size: 16px;
+    color: rgb(176, 184, 215);
+}
