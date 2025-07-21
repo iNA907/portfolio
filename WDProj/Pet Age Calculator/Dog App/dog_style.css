@@ -1,6 +1,6 @@
 body{
     background-color: #854836;
-    background-image: url("../assets/dog/pattern.png");
+    background-image: url("../Assets/dog\ pattern.png")
 }
 .name_area, .age_area{
     background-color: #b59186;
